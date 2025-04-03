@@ -1,5 +1,3 @@
-# OpenAI-TextBlaze-CV-Generator
-
 # Text Blaze OpenAI Cover Letter Generator
 
 This project provides a Text Blaze snippet that leverages OpenAI's GPT-3.5-turbo model to generate personalized cover letter templates based on job descriptions copied to your clipboard.
