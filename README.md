@@ -41,25 +41,6 @@ This project leverages TextBlaze and OpenAI's GPT-3.5 to automatically generate 
 
 You can significantly improve your results by modifying the "content" field in the TextBlaze code to include your specific background information. This helps the AI generate more personalized cover letters without changing the {clipboard} functionality.
 
-Here's how to modify the content section:
-
-```
-"content": "You are a resume expert. Please write a cover letter template for this job posting: {clipboard}. 
-Include the following details about my background:
-- 5 years of experience as a Software Developer at XYZ Corp
-- Expertise in Python, JavaScript, and React
-- Led a team of 3 developers on a project that increased company revenue by 15%
-- Masters degree in Computer Science from ABC University"
-```
-
-#### Tips for Effective Content Customization
-
-1. **Add Your Job History**: Include your most relevant positions and years of experience
-2. **Highlight Key Skills**: Mention technical abilities, soft skills, and certifications
-3. **Include Notable Achievements**: Add quantifiable accomplishments
-4. **Mention Education**: Add degrees, institutions, and relevant coursework
-5. **Specify Preferred Tone**: Request formal, conversational, or enthusiastic writing style
-
 ### Example of a Customized Prompt
 
 ```
@@ -73,6 +54,14 @@ Use these details about me:
 - Prefer a confident, professional tone
 Include a strong opening paragraph and emphasize my leadership abilities."
 ```
+
+#### Tips for Effective Content Customization
+
+1. **Add Your Job History**: Include your most relevant positions and years of experience
+2. **Highlight Key Skills**: Mention technical abilities, soft skills, and certifications
+3. **Include Notable Achievements**: Add quantifiable accomplishments
+4. **Mention Education**: Add degrees, institutions, and relevant coursework
+5. **Specify Preferred Tone**: Request formal, conversational, or enthusiastic writing style
 
 ## Customization After Generation
 
