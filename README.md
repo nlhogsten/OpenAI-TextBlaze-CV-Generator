@@ -19,7 +19,7 @@ This project leverages TextBlaze and OpenAI's GPT-3.5 to automatically generate 
 ### Installation
 
 1. Install the [TextBlaze Chrome extension](https://chrome.google.com/webstore/detail/text-blaze/idgadaccgipmpannjkmfddolnnhmeklj)
-2. Create a new TextBlaze snippet called "makeCV"
+2. Create a new TextBlaze snippet called "Make CV" with command /makeCV
 3. Copy the code below into your snippet
 4. Replace the placeholder API key with your actual OpenAI API key
 5. Save the snippet
