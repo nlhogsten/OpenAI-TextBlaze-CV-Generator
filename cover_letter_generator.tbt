@@ -1,0 +1,4 @@
+{request_body=tojson(["temperature": 0.3, "max_tokens": 256, "model": "gpt-3.5-turbo", "messages": [["role": "user", "content": "You are a resume expert. Please write a cover letter template for this job posting: {clipboard}"]]], "{model: string, messages: { role: string, content: string }[], temperature: number, max_tokens: number}")}
+{=request_body}
+{urlload: https://api.openai.com/v1/chat/completions; method=POST; headers=Content-Type:application/json, Authorization:Bearer  <open ai api key>; body={=request_body}; done=(res) -> catch(["result": res, "isloading": no, "haserror" : no], ["name": res, "isloading": no, "haserror": yes]); start=() -> ["isloading": yes]}
+{if: isloading}Loading...{else}{response=fromjson(result)["choices"][1]["message"]["content"]}{=response}{endif}
